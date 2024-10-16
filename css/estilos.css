@@ -22,3 +22,8 @@ Selector universal: modifica todas las etiquetas que esten dentro de html que ti
 resetea: valores,fuente,margenes entre otras.
 
 */
+
+#logo{
+background-color: rgb(199, 27, 27);
+width: 75px;
+}
