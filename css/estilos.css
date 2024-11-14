@@ -1,28 +1,6 @@
-/*
-Comentarios en css
-
-tenemos reglas para dar estilos a los html que desiemos
-
-Reglas de estilo
-la manera de apliocar etiquetas a una etiqueta a un grupo de etiquetas de html, es atravez de selectores
-esturctura  para el selector:
-selector{
-    propiedades: valor;
+#sect_logo{
+    background-color: violet;
 }
-
-h1{
-    color:red;
-}
-
-para poder impactor los cambios haty que vinvularlo con el html
-
-<link rel="stylesheet" href="direccion">
-
-Selector universal: modifica todas las etiquetas que esten dentro de html que tienen linkeadas en ese css
-resetea: valores,fuente,margenes entre otras.
-
-*/
-
 #logo{
 background-color: rgb(199, 27, 27);
 width: 75px;
