@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,47 +10,66 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img id="logo" src="assets/img/logo.png" alt="imagen de un procesador con una hoja dentro">
-
-    </header>
-    <main>
-        <nav>
-            <ul style="list-style-type: none; display: flex;">
+        <nav class="navHeader">
+            <ul class="ulHeader">
                 <!-- siempre se deben agrupar la navegacion en listas desordenadas por convencion de buenas practicas -->
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/galeria.html">Galeria</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-                <li><a href="pages/carrito.html">Carrito</a></li>
+                <li class="listaItem"><a class="linkHeader" href="index.html">Inicio</a></li>
+                <li class="listaItem"><a class="linkHeader" href="pages/galeria.html">Galeria</a></li>
+                <li class="listaItem"><a class="linkHeader" href="pages/contacto.html">Contacto</a></li>
+                <li class="listaItem"><a class="linkHeader" href="pages/carrito.html">Carrito</a></li>
             </ul>
         </nav>
-        <section>
+    </header>
+    <main class="main">
+        <section class="principal">
             <h1>Conoce la <b>TECNOLOGIA</b> que te falta</h1>
+            <div class="contenedorTextoPrincipal">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem error mollitia saepe culpa
+                    doloremque facere! Voluptate rem perspiciatis magnam sequi quia quae sint dolorem laboriosam
+                    excepturi deleniti? Iste, tempore?
+                </p>
+                </divc>
         </section>
-        <section>
-            <h2>NUESTROS PPRODUCTOS</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </section>
-        <section>
-            <h2>Texto</h2>
-            <p>Parrafo</p>
-        </section>
-        <section>
-            <h2>Texto</h2>
-            <p>Parrafo</p>
-        </section>
-        <section>
-            <h2>Texto</h2>
-            <p>Parrafo</p>
+        <section class="sectionGaleria">
+            <div class="divImg">
+                <img src="assets/img/10 amazing Apple iPhone hacks you might not be aware of.jpeg" alt="imagen1">
+                <h2>foto1</h2>
+            </div>
+            <div class="divImg">
+                <img src="assets/img/Apple announces iPhone 14 and more _ WordlessTech.jpeg" alt="imagen1">
+                <h2>foto2</h2>
+            </div>
+            <div class="divImg">
+                <img src="assets/img/Galaxy S23 Ultra Lavande 256Go avec abonnement Forfait 220Go 5G Samsung.jpeg"
+                    alt="imagen3">
+                <h2>foto3</h2>
+            </div>
+            <div class="divImg">
+                <img src="assets/img/Iphone 13.jpeg" alt="imagen4">
+                <h2>foto4</h2>
+            </div>
         </section>
 
     </main>
-    <footer>
-        <p>Aca estan todos los datos de Contacto</p>
+    <footer class="footer">
+        <div>
+            <form action="">
+                <input type="email" placeholder="Tu Correo Electronico" id="emailSus" name="emailSus">
+                <input type="submit" value="Suscribirse">
+            </form>
+        </div>
+        <address>
+            <p>Direccion: calle falsa 123,Los Polvorines, Ciudad de Buenos Aires</p>
+            <p>Telefono: (11)4223-2323</p>
+            <p>Correo Electronico: contactofalso123@tech.com</p>
+        </address>
+        <div>
+            <a href="" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+        </div>
+        <p>2024 Tech | Todos los derechos </p>
     </footer>
 </body>
 

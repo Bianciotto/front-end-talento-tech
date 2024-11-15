@@ -1,7 +1,147 @@
-#sect_logo{
-    background-color: violet;
+* {
+    font-family: "Fira Sans Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
-#logo{
-background-color: rgb(199, 27, 27);
-width: 75px;
+
+.header {
+    background-color: rgb(143, 155, 177);
+    height: 10vh;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    max-height: 100%;
+    max-width: auto;
+    height: auto;
+}
+
+.navHeader {
+
+    left: 50%;
+    margin: auto;
+    max-height: 10vh;
+
+    .ulHeader {
+        list-style: none;
+        display: flex;
+        max-height: 10vh;
+        font-size: 1.5vw;
+
+        .listaItem {
+            margin-right: 10px;
+            background-color: rgba(0, 0, 255, 0.24);
+            display: inline-block;
+            padding-left: 2em;
+            padding-right: 2em;
+            border-radius: 63px 63px 63px 63px;
+            -webkit-border-radius: 63px 63px 63px 63px;
+            -moz-border-radius: 63px 63px 63px 63px;
+            border: 6px solid #030303;
+            transform: (0.5);
+
+        }
+
+        .linkHeader {
+            margin-bottom: 10px;
+            padding: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: rgb(22, 22, 22);
+            font-size: 1rem;
+        }
+    }
+
+}
+
+.main {
+    background-image: url("file:///c%3A/Users/Felipe/Documents/front-end-talento-tech/assets/img/fondoMain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+
+    .principal {
+        height: auto;
+        padding-top: 100px;
+        text-align: center;
+
+
+        .contenedorTextoPrincipal {
+
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+            font-size: 10px;
+            color: black;
+            backdrop-filter: blur(15px);
+
+            p {
+                margin-top: 75px;
+                font-size: 2.5em;
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                color: brown;
+                font-size: 2.5em;
+            }
+        }
+
+    }
+
+    .sectionGaleria {
+        font-family: "Fira Sans Condensed", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+
+        color: rgb(0, 0, 0);
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 40px;
+        justify-content: space-evenly;
+        gap: 50px;
+
+        .divImg {
+            background-color: rgb(255, 255, 255);
+            border: 3px solid gray;
+            width: 500px;
+            height: 800px;
+            img{
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: lightgray;
+    height: auto;
+
+    /* .bi-whatsapp {
+        font-size: 5em;
+        color: rgb(44, 181, 44);
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+*/
+    p {
+        font-size: 1em;
+    }
 }
