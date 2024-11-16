@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Tech</title>
     <link rel="shortcut icon" href="favicon.ico" type="imagen/x-icon">
+    <script src="https://kit.fontawesome.com/3199607954.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -18,13 +19,14 @@
                 <li class="listaItem"><a class="linkHeader" href="index.html">Inicio</a></li>
                 <li class="listaItem"><a class="linkHeader" href="pages/galeria.html">Galeria</a></li>
                 <li class="listaItem"><a class="linkHeader" href="pages/contacto.html">Contacto</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/carrito.html">Carrito</a></li>
+                <li class="listaItem"><a class="linkHeader" href="pages/carrito.html">Carrito <i
+                            class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="principal">
-            <h1>Conoce la <b>TECNOLOGIA</b> que te falta</h1>
+            <h1>Conoce la TECNOLOGIA que te falta</h1>
             <div class="contenedorTextoPrincipal">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem error mollitia saepe culpa
@@ -36,30 +38,42 @@
         <section class="sectionGaleria">
             <div class="divImg">
                 <img src="assets/img/10 amazing Apple iPhone hacks you might not be aware of.jpeg" alt="imagen1">
-                <h2>foto1</h2>
+
+                <h2>Foto1<a class="linkHeader" href="pages/contacto.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </h2>
+                <h4>$300.00</h4>
             </div>
             <div class="divImg">
                 <img src="assets/img/Apple announces iPhone 14 and more _ WordlessTech.jpeg" alt="imagen1">
-                <h2>foto2</h2>
+                <h2>Foto2<a class="linkHeader" href="pages/contacto.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </h2>
+                <h4>$300.00</h4>
             </div>
             <div class="divImg">
                 <img src="assets/img/Galaxy S23 Ultra Lavande 256Go avec abonnement Forfait 220Go 5G Samsung.jpeg"
                     alt="imagen3">
-                <h2>foto3</h2>
+                <h2>Foto3<a class="linkHeader" href="pages/contacto.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </h2>
+                <h4>$300.00</h4>
             </div>
             <div class="divImg">
                 <img src="assets/img/Iphone 13.jpeg" alt="imagen4">
-                <h2>foto4</h2>
+                <h2>Foto4<a class="linkHeader" href="pages/contacto.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </h2>
+                <h4>$300.00</h4>
             </div>
         </section>
 
     </main>
     <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""> <i class="fa-brands fa-x-twitter"></i> </a></li>
+                <li><a href=""> <i class="fa-brands fa-instagram"></i> </a></li>
+        </nav>
         <div>
-            <form action="">
-                <input type="email" placeholder="Tu Correo Electronico" id="emailSus" name="emailSus">
-                <input type="submit" value="Suscribirse">
-            </form>
+            <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST"> <div class="form-group"> <label for="name">Nombre:</label> <input type="text" id="name" name="name" required> </div> <div class="form-group"> <label for="email">Correo Electrónico:</label> <input type="email" id="email" name="email" required> </div> <div class="form-group"> <label for="message">Mensaje:</label> <textarea id="message" name="message" required></textarea> </div> <button type="submit">Enviar</button> </form>
         </div>
         <address>
             <p>Direccion: calle falsa 123,Los Polvorines, Ciudad de Buenos Aires</p>
@@ -67,7 +81,7 @@
             <p>Correo Electronico: contactofalso123@tech.com</p>
         </address>
         <div>
-            <a href="" target="_blank"> <i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
         <p>2024 Tech | Todos los derechos </p>
     </footer>
