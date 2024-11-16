@@ -65,7 +65,7 @@
 }
 
 .main {
-    background-image: url("file:///c%3A/Users/Felipe/Documents/front-end-talento-tech/assets/img/fondoMain.jpg");
+    background-image: url(".assets\img\fondoMain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
