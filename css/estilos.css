@@ -6,17 +6,31 @@
 
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(143, 155, 177);
     height: 10vh;
-    font-size: 10px;
+    padding: 0 1em;
     position: sticky;
     top: 0;
     z-index: 10;
+    overflow: hidden;
+    /* Asegura que los contenidos no sobresalgan del header */
+}
+
+.fixed-size {
+    width: 150px;
+    /* Tamaño fijo para el primer y tercer div */
+    height: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #logo {
@@ -25,40 +39,70 @@
     height: auto;
 }
 
-.navHeader {
+#botonTema {
 
-    left: 50%;
-    margin: auto;
-    max-height: 10vh;
+    background-color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 63px 63px 63px 63px;
+    -webkit-border-radius: 63px 63px 63px 63px;
+    -moz-border-radius: 63px 63px 63px 63px;
+    border: 6px solid #030303;
+    transform: (0.5);
+    margin-right: 1em;
+
+}
+
+#botonTema:hover {
+    background-color: rgb(122, 59, 134);
+    color: #ffffff;
+}
+
+#botonTema:active {
+    transform: translateY(2px);
+    /* Mueve el botón hacia abajo */
+    box-shadow: 0 2px #666;
+    /* Reduce la sombra */
+}
+
+.flexible-size {
+    flex-grow: 1;
+    /* Permite que el segundo div ocupe el espacio disponible */
+    min-width: 0;
+    /* Asegura que el div puede reducirse pero sin superponerse */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Evita que el contenido se deforme o sobresalga */
+}
+
+.navHeader {
+    box-sizing: border-box;
 
     .ulHeader {
         list-style: none;
-        display: flex;
-        max-height: 10vh;
-        font-size: 1.5vw;
 
         .listaItem {
-            margin-right: 10px;
+            
+            align-items: first baseline;
+            justify-content: baseline;
+            display: inline-flex;
             background-color: rgba(0, 0, 255, 0.24);
-            display: inline-block;
-            padding-left: 2em;
-            padding-right: 2em;
             border-radius: 63px 63px 63px 63px;
             -webkit-border-radius: 63px 63px 63px 63px;
             -moz-border-radius: 63px 63px 63px 63px;
             border: 6px solid #030303;
             transform: (0.5);
-
+            margin-right: 1em;
+            padding: 5px 5px 5px 5px;
+            color: #ffffff;
         }
 
         .linkHeader {
-            margin-bottom: 10px;
-            padding: 5px;
-            display: inline-block;
-            margin-top: 20px;
             text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-size: 1rem;
+            color: #ffffff;
         }
     }
 
@@ -78,11 +122,11 @@
         text-align: center;
 
         h1 {
-            font-family: 'Lobster', cursive;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
             font-size: 3em;
             color: #ffffff;
             text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(53, 38, 38, 0.3);
             text-shadow: -1px -1px 0 #000000,
                 1px -1px 0 #000000,
                 -1px 1px 0 #030303,
@@ -91,22 +135,22 @@
         }
 
         .contenedorTextoPrincipal {
-
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
             margin: 0 auto;
             text-align: center;
             width: 50%;
             font-size: 10px;
-            color: black;
-            text-shadow: -1px -1px 0 #ffffff,
-                1px -1px 0 #ffffff,
-                -1px 1px 0 #ffffff,
-                1px 1px 0 #ffffff;
+            color: rgb(255, 255, 255);
+            text-shadow: -1px -1px 0 #000000,
+                1px -1px 0 #000000,
+                -1px 1px 0 #000000,
+                1px 1px 0 #000000;
 
 
             p {
                 margin-top: 75px;
-                font-size: 2.5em;
-
+                font-size: 3em;
+                padding: 20px 20px;
             }
 
             a {
@@ -145,6 +189,45 @@
                 object-fit: cover;
             }
         }
+
+        .boton-bonito {
+            background-color: #6200EA;
+            /* Color de fondo */
+            color: #FFFFFF;
+            /* Color del texto */
+            padding: 12px 24px;
+            /* Espaciado interno */
+            border: none;
+            /* Sin bordes */
+            border-radius: 50px;
+            /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            /* Sombras */
+            font-size: 16px;
+            /* Tamaño del texto */
+            cursor: pointer;
+            /* Cambia el cursor a puntero */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            /* Transiciones suaves */
+        }
+
+        .boton-bonito:hover {
+            background-color: #3700B3;
+            /* Color de fondo al pasar el cursor */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Sombras al pasar el cursor */
+            transform: scale(1.05);
+            /* Ligero aumento de tamaño al pasar el cursor */
+        }
+
+        .boton-bonito:active {
+            background-color: #30009C;
+            /* Color de fondo al hacer clic */
+            box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+            /* Sombras al hacer clic */
+            transform: scale(0.95);
+            /* Ligera reducción de tamaño al hacer clic */
+        }
     }
 }
 
@@ -155,17 +238,18 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
+
     .navFooter {
 
         left: 50%;
         margin: auto;
         max-height: 10vh;
-    
+
         .ulFooter {
             list-style: none;
             max-height: 10vh;
             font-size: 1.5vw;
-    
+
             .listaItem {
                 margin-right: 0px;
                 margin-bottom: 5px;
@@ -173,8 +257,9 @@
                 padding-left: 2em;
                 padding-right: 2em;
 
+
             }
-    
+
             .linkHeader {
                 padding: 0px;
                 display: inline-block;
@@ -184,8 +269,9 @@
                 font-size: 1rem;
             }
         }
-    
+
     }
+
     ul {
         list-style: none;
 

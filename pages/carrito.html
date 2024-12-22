@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Carrito</title>
+    <script src="https://kit.fontawesome.com/3199607954.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="C:\Users\Felipe\Documents\front-end-talento-tech\css\estilosCarrito.css">
+</head>
+<body>
+    <header class="header">
+        <div class="fixed-size" id="div1">
+            <img id="logo" src="C:\Users\Felipe\Documents\front-end-talento-tech\assets\img\logo.png" alt="imagen de un procesador con una hoja dentro">
+        </div>
+        <div class="flexible-size" id="div2">
+            <nav class="navHeader" id="navHeader">
+                <ul class="ulHeader">
+                    <li class="listaItem"><a class="linkHeader" href="C:\Users\Felipe\Documents\front-end-talento-tech\index.html">Inicio</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="fixed-size" id="div3"><button id="botonTema">Cambiar tema</button>
+        </div>
+    </header>
+<main class="main">
+    <section class="container">
+    <div id="carrito"></div>
+    <a> Pagar</a>
+    <button class="botonClear" onclick="clearCart()">Vaciar Carrito</button>
+    </section>
+</main>
+    <footer class="footer" id="footer">
+        <nav>
+            <ul>
+                <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"
+                        target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://x.com/?lang=es" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                </li>
+        </nav>
+        <div id="idForm">
+            <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST">
+                <div class="form-group"> <label for="name">Nombre:</label> <input type="text" id="name" name="name"
+                        required> </div>
+                <div class="form-group"> <label for="email">Correo Electrónico:</label> <input type="email" id="email"
+                        name="email" required> </div>
+                <div class="form-group"> <label for="message">Mensaje:</label> <textarea id="message" name="message"
+                        required></textarea> </div> <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <address>
+            <p>Direccion: calle falsa 123,Los Polvorines, Ciudad de Buenos Aires</p>
+            <p>Telefono: (11)4223-2323</p>
+            <p>Correo Electronico: contactofalso123@tech.com</p>
+        </address>
+        <div>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>2024 Tech | Todos los derechos </p>
+    </footer>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\temaOscuro.js"></script>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\home-carrito.js"></script>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\carrito.js"></script>
+
+</body>
+</html>

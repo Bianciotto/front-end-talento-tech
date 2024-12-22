@@ -12,76 +12,86 @@
 
 <body>
     <header class="header">
-        <img id="logo" src="assets/img/logo.png" alt="imagen de un procesador con una hoja dentro">
-        <nav class="navHeader">
-            <ul class="ulHeader">
-                <!-- siempre se deben agrupar la navegacion en listas desordenadas por convencion de buenas practicas -->
-                <li class="listaItem"><a class="linkHeader" href="index.html">Inicio</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/galeria.html">Galeria</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/contacto.html">Contacto</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/carrito.html">Carrito <i
-                            class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
+        <div class="fixed-size" id="div1">
+            <img id="logo" src="assets/img/logo.png" alt="imagen de un procesador con una hoja dentro">
+        </div>
+        <div class="flexible-size" id="div2">
+            <nav class="navHeader" id="navHeader">
+                <ul class="ulHeader">
+                    <li class="listaItem"><a class="linkHeader" href="#main">Inicio</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="#galeria">Galeria</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="#footer">Contacto</a> </li>
+                    <li class="listaItem"><a class="linkHeader" href="C:\Users\Felipe\Documents\front-end-talento-tech\pages\carrito.html"> <i
+                                class="fa-solid fa-cart-shopping"></i>Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="fixed-size" id="div3"><button id="botonTema">Cambiar tema</button>
+        </div>
     </header>
-    <main class="main">
+    <main class="main" id="main">
         <section class="principal">
             <h1>Conoce la TECNOLOGIA que te falta</h1>
             <div class="contenedorTextoPrincipal">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatem error mollitia saepe culpa
-                    doloremque facere! Voluptate rem perspiciatis magnam sequi quia quae sint dolorem laboriosam
-                    excepturi deleniti? Iste, tempore?
+                    ¡Descubre la mejor tecnología en nuestra tienda de celulares! Ofrecemos una amplia gama de smartphones de las marcas más reconocidas como Apple, Samsung, Huawei y Xiaomi. Disfruta de increíbles ofertas y descuentos exclusivos que no encontrarás en ningún otro lugar. Nuestro equipo de expertos está siempre listo para asesorarte y ayudarte a encontrar el dispositivo perfecto que se adapte a tus necesidades y presupuesto. Además, contamos con accesorios de alta calidad para complementar tu experiencia móvil. Visítanos hoy y lleva tu tecnología al siguiente nivel. ¡La innovación y la conectividad están a solo un clic de distancia! 🌟📱🔋
                 </p>
                 </divc>
         </section>
-        <section class="sectionGaleria">
-            <div class="divImg">
+        <section class="sectionGaleria" id="galeria"  >
+            <div class="divImg" class="item" data-name="Iphone 15" data-price="375">
                 <img src="assets/img/10 amazing Apple iPhone hacks you might not be aware of.jpeg" alt="imagen1">
-
-                <h2>Foto1<a class="linkHeader" href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </h2>
-                <h4>$300.00</h4>
-            </div>
-            <div class="divImg">
+                <h2>Iphone 15</h2>
+                <h4>$375.00</h4>
+                <button class="boton-bonito" onclick="addToCart('Iphone 15', 375)">Agregar al carrito</button>
+                </div>
+            <div class="divImg" class="item" data-name="Iphone 15 Pro" data-price="425">
                 <img src="assets/img/Apple announces iPhone 14 and more _ WordlessTech.jpeg" alt="imagen1">
-                <h2>Foto2<a class="linkHeader" href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </h2>
-                <h4>$300.00</h4>
+                <h2>Iphone 15 Pro</h2>
+                <h4>$425.00</h4>
+                <button class="boton-bonito" onclick="addToCart('Iphone 15 Pro', 425)">Agregar al carrito</button>
             </div>
-            <div class="divImg">
+            <div class="divImg" class="item" data-name="SG S23 Ultra" data-price="500">
                 <img src="assets/img/Galaxy S23 Ultra Lavande 256Go avec abonnement Forfait 220Go 5G Samsung.jpeg"
-                    alt="imagen3">
-                <h2>Foto3<a class="linkHeader" href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </h2>
-                <h4>$300.00</h4>
+                    alt="SG S23 Ultra">
+                <h2>SG S23 Ultra</h2>
+                <h4>$500.00</h4>
+                <button class="boton-bonito" onclick="addToCart('SG S23 Ultra', 500)">Agregar al carrito</button>
             </div>
-            <div class="divImg">
-                <img src="assets/img/Iphone 13.jpeg" alt="imagen4">
-                <h2>Foto4<a class="linkHeader" href="pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                </h2>
+            <div class="divImg"  class="item" data-name="Iphone 14" data-price="300">
+                <img src="assets/img/Iphone 13.jpeg" alt="Iphone 14">
+                <h2>Iphone 14</h2>
                 <h4>$300.00</h4>
+                <button class="boton-bonito" onclick="addToCart('Iphone 14', 300)">Agregar al carrito</button>
             </div>
         </section>
-
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <nav class="navFooter">
             <ul class="ulFooter">
-                <!-- siempre se deben agrupar la navegacion en listas desordenadas por convencion de buenas practicas -->
                 <li class="listaItem"><a class="linkHeader" href="index.html">Inicio</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/galeria.html">Galeria</a></li>
-                <li class="listaItem"><a class="linkHeader" href="pages/contacto.html">Contacto</a></li>
+                <li class="listaItem"><a class="linkHeader" href="#galeria">Galeria</a></li>
+                <li class="listaItem"><a class="linkHeader" href="C:\Users\Felipe\Documents\front-end-talento-tech\pages\carrito.html"> <i
+                    class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
         <nav>
             <ul>
-                <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"
+                        target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://x.com/?lang=es" target="_blank"> <i class="fa-brands fa-x-twitter"></i> </a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                </li>
         </nav>
         <div>
-            <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST"> <div class="form-group"> <label for="name">Nombre:</label> <input type="text" id="name" name="name" required> </div> <div class="form-group"> <label for="email">Correo Electrónico:</label> <input type="email" id="email" name="email" required> </div> <div class="form-group"> <label for="message">Mensaje:</label> <textarea id="message" name="message" required></textarea> </div> <button type="submit">Enviar</button> </form>
+            <form action="https://formspree.io/YOUR_EMAIL_HERE" method="POST">
+                <div class="form-group"> <label for="name">Nombre:</label> <input type="text" id="name" name="name"
+                        required> </div>
+                <div class="form-group"> <label for="email">Correo Electrónico:</label> <input type="email" id="email"
+                        name="email" required> </div>
+                <div class="form-group"> <label for="message">Mensaje:</label> <textarea id="message" name="message"
+                        required></textarea> </div> <button type="submit">Enviar</button>
+            </form>
         </div>
         <address>
             <p>Direccion: calle falsa 123,Los Polvorines, Ciudad de Buenos Aires</p>
@@ -93,6 +103,9 @@
         </div>
         <p>2024 Tech | Todos los derechos </p>
     </footer>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\temaOscuro.js"></script>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\home-carrito.js"></script>
+    <script src="C:\Users\Felipe\Documents\front-end-talento-tech\js\carrito.js"> </script>
 </body>
 
 </html>
