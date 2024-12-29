@@ -63,34 +63,10 @@ body {
     padding-top: 10px;
     text-align: right;
 }
-
-#botonTema {
-
-    background-color: white;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-radius: 63px 63px 63px 63px;
-    -webkit-border-radius: 63px 63px 63px 63px;
-    -moz-border-radius: 63px 63px 63px 63px;
-    border: 6px solid #030303;
-    transform: (0.5);
-    margin-right: 1em;
-
-}
-
-#botonTema:hover {
-    background-color: rgb(122, 59, 134);
-    color: #ffffff;
-}
-
-#botonTema:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px #666;
-}
-
 .flexible-size {
-    flex-grow: 1;
-    min-width: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100%;
     display: flex;
     align-items: center;
@@ -105,19 +81,17 @@ body {
         list-style: none;
 
         .listaItem {
-
             align-items: first baseline;
             justify-content: baseline;
             display: inline-flex;
-            background-color: rgba(0, 0, 255, 0.24);
-            border-radius: 63px 63px 63px 63px;
-            -webkit-border-radius: 63px 63px 63px 63px;
-            -moz-border-radius: 63px 63px 63px 63px;
-            border: 6px solid #030303;
-            transform: (0.5);
-            margin-right: 1em;
-            padding: 5px 5px 5px 5px;
-            color: #ffffff;
+            background-color: #6200EA;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            margin: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
         }
 
         .linkHeader {
@@ -134,7 +108,7 @@ body {
     
     a{
             text-decoration: none;
-            background-color: #aa9d2b;
+            background-color: #2baa4b;
             color: #fff;
             padding: 10px 20px;
             border: none;
@@ -180,8 +154,6 @@ body {
         border-radius: 8px;
         }
 .footer {
-
-    background-color: lightgray;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -191,6 +163,8 @@ body {
     padding: 0 1em;
     z-index: 10;
     overflow: hidden;
+    background-color: #6200EA;
+                color: #fff;
 
     ul {
         padding-top: 5px;
